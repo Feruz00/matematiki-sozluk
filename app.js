@@ -5,7 +5,7 @@ const app = express()
 const session = require('express-session');
 
 app.use(cors({
-    origin: process.env.CLIENT,
+    origin: ['http://localhost:3000', process.env.CLIENT],
     credentials: true
 }));
 
